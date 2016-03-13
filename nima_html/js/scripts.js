@@ -1,10 +1,26 @@
 $( document ).ready( function() {
   
+  $('.skill_level').hide(); // hides
+
+  
+  
+  
   $( ".n_image" ).click(function() {
     $(this).next().toggleClass("active_sport");
   });
+  
+  $( ".sport-icon" ).click(function() {
+    $(this).siblings(".n_check").toggleClass("active_sport");
+    $(this).siblings(".skill_level").slideToggle();
+  });
 
   // With JQuery
+  $('#ex1').slider({
+    formatter: function(value) {
+      return value;
+    }
+  });
+  
   $("#bootstrap-slider1").slider({ min: 0, max: 10, value: 5, focus: true });
   $("#bootstrap-slider2").slider({ min: 0, max: 10, value: 5, focus: true });
   $("#bootstrap-slider3").slider({ min: 0, max: 10, value: 5, focus: true });

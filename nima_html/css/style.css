@@ -1,7 +1,3 @@
-.n_image {
-  width: 10em;
-  height: auto;
-}
 
 .n_check {
   
@@ -16,6 +12,13 @@
   
 }
 
-#bs1 .slider-selection {
-	background: #BABABA;
+
+li {
+    overflow:auto;
+}
+
+.sport-container {
+  
+  height: 20em;
+  
 }
