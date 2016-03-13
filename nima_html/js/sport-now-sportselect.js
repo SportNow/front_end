@@ -1,5 +1,5 @@
 /*sport-now-sportselect.js*/
-  $(function() {
+/*  $(function() {
     sliders =  ["amount1", "amount2", "amount3", "amount4", "amount5", "amount6", "amount7", "amount8", "amount9"];
     
     $( ".sport-slider" ).each(function(index) {
@@ -18,4 +18,4 @@
     })
    
   });
-
+*/

@@ -1,4 +1,27 @@
 /*sport-now-sportselect.css*/
+body {
+    background: url(images/basketball-court.jpg) no-repeat center center fixed; 
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFF8DC;
+}
+
+
+html,body { height:100%; }
+
+.container { height:100%;}
+
+.row {height:100%;}
+
+#container-height {
+    height: 80%;
+    margin: 0
+}
+
 #header-color {
     background-color: #990000;
     opacity: .9;
@@ -36,33 +59,5 @@
   left:4em;
   height: 200px;
   width: 200px;
-}
-
-.resize {
-  height: 50px;
-  width: 50px;
-}
-
-body {
-    background: url(images/basketball-court.jpg) no-repeat center center fixed; 
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #FFF8DC;
-}
-
-
-html,body { height:100%; }
-
-.container { height:100%;}
-
-.row {height:100%;}
-
-#test {
-    height: 80%;
-    margin: 0
 }
 
