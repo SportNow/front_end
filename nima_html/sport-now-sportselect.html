@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <title>SportNow SportSelect</title>
-  <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
-  <script src="js/sport-now-sportselect.js"></script>
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
   
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!--sport-now-->
+  <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
+  
   
 </head>
 <body>
@@ -29,75 +30,69 @@
     <h1>SportNow</h1>
   </div>
   
-  <div id=container-height class=row>
-    <div class="sport-now-main">
-      <h1 class="h1">SportSelect</h1>
-      <ul>
-        <div class="row">
-          <div class="col-md-4"><li><img src="css/images/basketball-icon.png" alt="basketball" id="hockey" class="sport-icon"></li></div>
-          <div class="col-md-4"><li><img src="css/images/soccer-icon.png" alt="soccer" id="soccer" class="sport-icon"></li></div>
-          <div class="col-md-4"><li><img src="css/images/bicycle-icon.png" alt="bicycle" id="bicycle" class="sport-icon"></li></div>
+  <div class="sport-now-main">
+    <h1 class="h1">SportSelect</h1>
+    <ul class="list-inline">
+      <li>
+        <div class="sport-container">
+          <img src="css/images/basketball-icon-mono.png" alt="basketball" id="hockey" class="sport-icon">
+           <input id="bootstrap-slider1" class=sportslider data-slider-id="bs1" type="text"/>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-              <input type="text" id="amount1" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider1"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount2" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider2"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount3" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider3"></div>
-          </div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/soccer-icon-mono.png" alt="soccer" id="soccer" class="sport-icon">
+          <input id="bootstrap-slider2" type="text"/>
         </div>
-        <div class="row">
-          <div class="col-md-4"><li><img src="css/images/hockey-icon.png" alt="hockey" id="hockey" class="sport-icon"></li></div>
-          <div class="col-md-4"><li><img src="css/images/tennis-icon.png" alt="tennis" id="tennis" class="sport-icon"></li></div>
-          <div class="col-md-4"><li><img src="css/images/football-icon.png" alt="football" id="football" class="sport-icon"></li></div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/bicycle-icon-mono.png" alt="bicycle" id="bicycle" class="sport-icon">
+          <input id="bootstrap-slider3" type="text"/>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-              <input type="text" id="amount4" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider4"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount5" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider5"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount6" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider6"></div>
-          </div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/hockey-icon-mono.png" alt="hockey" id="hockey" class="sport-icon">
+          <input id="bootstrap-slider4" type="text"/>
         </div>
-        <div class="row">
-          <div class="col-md-4"><li><img src="css/images/running-icon.png" alt="running" id="running" class="sport-icon"> </li></div>
-          <div class="col-md-4"><li><img src="css/images/golf-icon.png" alt="golf" id="golf" class="sport-icon"></li></div>
-          <div class="col-md-4"><li><img src="css/images/baseball-icon.png" alt="baseball" id="baseball" class="sport-icon"> </li></div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/tennis-icon-mono.png" alt="tennis" id="tennis" class="sport-icon">
+          <input id="bootstrap-slider5" type="text"/>
         </div>
-        <div class="row">
-        <div class="col-md-4">
-              <input type="text" id="amount7" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider7"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount8" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider8"></div>
-          </div>
-          <div class="col-md-4">
-              <input type="text" id="amount9" class="sport-slider"  style="border:0; color:#f6931f; font-weight:bold;">
-              <div id="slider9"></div>
-          </div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/football-icon-mono.png" alt="football" id="football" class="sport-icon">
+          <input id="bootstrap-slider6" type="text"/>
         </div>
-      </ul>
-      
-      <button type="submit" id="align" class="btn btn-primary">Submit</button>
-      
-      
-    </div>
-      
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/running-icon-mono.png" alt="running" id="running" class="sport-icon"> 
+          <input id="bootstrap-slider7" type="text"/>
+        </div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/golf-icon-mono.png" alt="golf" id="golf" class="sport-icon">
+          <input id="bootstrap-slider8" type="text"/>
+        </div>
+      </li>
+      <li>
+        <div class="sport-container">
+          <img src="css/images/baseball-icon-mono.png" alt="baseball" id="baseball" class="sport-icon"> 
+          <input id="bootstrap-slider9" type="text"/>
+        </div>
+      </li>
+    </ul>
+    
+    <button type="submit" id="align" class="btn btn-primary">Submit</button>
+    
   </div>
+    
 </div>
 
 
