@@ -1,0 +1,54 @@
+/*sport-now-sportselect.css*/
+#header-color {
+    background-color: #990000;
+    opacity: .9;
+    filter: alpha(opacity=90); /*for IE8 and earlier*/
+    color: #fff;
+}
+
+
+.sport-now-main {
+    background-color: #FFF;
+    opacity: 0.9;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.sport-icon {
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.resize {
+  height: 50px;
+  width: 50px;
+}
+
+body {
+    background: url(images/basketball-court.jpg) no-repeat center center fixed; 
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFF8DC;
+}
+
+
+html,body { height:100%; }
+
+.container { height:100%;}
+
+.row {height:100%;}
+
+#test {
+    height: 80%;
+    margin: 0
+}
+
