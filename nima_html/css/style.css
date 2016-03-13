@@ -1,0 +1,17 @@
+.n_image {
+  width: 10em;
+  height: auto;
+}
+
+.n_check {
+  
+  visibility: hidden;
+  
+}
+
+.active_sport {
+  
+  visibility: visible;
+  color: green;
+  
+}
