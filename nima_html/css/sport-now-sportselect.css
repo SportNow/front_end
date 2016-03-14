@@ -152,3 +152,21 @@ ul.vert-one li a.current,ul.vert-one li a.current:hover{
 .center-content .chat-here{
     margin-top: 10em;
 }
+
+.center-content .user-rating,
+                .user-placeholder,
+                .user-info,
+                .user-sport-info {
+                    
+    width: 44%;
+    float:left;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
+    
+}
+
+
+.user-placeholder .user-profile {
+    width: 80%
+}
