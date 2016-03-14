@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="registration.css">
+<title>New User</title>
+</head>
+
+<body>
+
+<h1>New User</h1>
+<form action="demo_form.asp" method="get" id="nameform">
+<p>First name:</p>
+<input type="text" name="firstname"><br>
+<p>Last name:</p>
+<input type="text" name="lastname"><br>
+<p>Username:</p>
+<input type="text" name="username"><br>
+<p>Password:</p>
+<input type="password" name="password"><br>
+<p>Gender:</p>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Gender</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Male</a>
+    <a href="#about">Female</a>
+  </div>
+</div>
+<p>Age:</p>
+<input type="text" name="age"><br>
+<p>Country:</p>
+<input type="text" name="country"><br>
+<p>City:</p>
+<input type="text" name="city"><br>
+</form>
+
+<br>
+
+<input type="submit" name="submit" value="Send" id="submit" />
+
+</body>
+</html>

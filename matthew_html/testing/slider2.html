@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>jQuery UI Slider functionality</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#slider-3" ).slider({
+               range:false,
+               min: 0,
+               max: 10,
+               value: [ 5 ],
+               slide: function( event, ui ) {
+                  $( "#price" ).val(ui.value[ 0 ] );
+               }
+           });
+         $( "#price" ).val( $( "#slider-3" ).slider( "value") );
+         });
+      </script>
+   </head>
+   <body>
+      <!-- HTML --> 
+      <p>
+         <label for="price">Price range:</label>
+         <input type="text" id="price" 
+            style="border:0; color:#b9cd6d; font-weight:bold;">
+      </p>
+      <div id="slider-3"></div>
+   </body>
+</html>
