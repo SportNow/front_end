@@ -1,9 +1,6 @@
 $( document ).ready( function() {
   
   $('.skill_level').hide(); // hides
-
-  
-  
   
   $( ".n_image" ).click(function() {
     $(this).next().toggleClass("active_sport");
