@@ -6,11 +6,11 @@
   <title>SportNow Event</title>
   
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   
   <!-- Latest compiled and minified JavaScript -->
   <script src="js/jquery-1.12.0.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
   
@@ -21,82 +21,85 @@
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
-  
 </head>
 <body>
   
-<!--<div class="sidebar">
-<ul>
-   <li class='active'><a href='index.html'><span>Home</span></a></li>
-   <li><a href='#'><span>Products</span></a></li>
-   <li><a href='#'><span>About</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
-</ul>
-</div>
-  -->
+<div class="sidebar">
+  <ul class="vert-one">
+    <img src="css/images/user.jpg" alt="User" class="img-responsive img-circle">
+    <h3 style="color:white; text-align:center;">Bobby</h3>
+    <li><a href="#" title="CSS Menus">User Profile</a></li>
+    <li><a href="#" title="CSS Menus" class="current">SportsFeed</a></li>
+    <li><a href="#" title="CSS Menus">About</a></li>
+    <li><a href="#" title="CSS Menus">Settings</a></li>
+    <li><a href="#" title="CSS Menus">Logout</a></li>
+  </ul>  
+  <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
+</div><!--End of sidebar-->
+  
 <div class="container">
   <div  id="header-color" class="jumbotron">
     <h1>SportNow</h1>
+</div>
+
+<div class="col-md-1">
+</div>
+<div class="center-content col-md-10">
+  <h1>Event</h1>
+  <div class="panel panel-default event-info">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h2>About the Event</h2>
+    </div>
+    <div class="panel-body">
+      <p>We can write about the event in here. Whatever we want to write about </p>
+    </div>
   </div>
   
-    <div class="col-md-1">
-    </div>
-    <div class="center-content col-md-10">
-      <h1>Event</h1>
-      <div class="panel panel-default event-info">
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h2>About the Event</h2>
-        </div>
-        <div class="panel-body">
-          <p>We can write about the event in here. Whatever we want to write about </p>
-        </div>
-      </div>
-      
-      <div class="map-placeholder">
-        <img src="css/images/map.png" alt="map" width="400px">
-      </div>
-      
-      <div class="panel panel-default attendee-info">
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h3>Attendees</h3>
-        </div>
-        <div class="panel-body">
-          <!-- Table -->
-          <table class="table">
-            <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-            </tr>
-            <tr>
-              <td>Peter</td>
-              <td>Griffin</td>
-            </tr>
-            <tr>
-              <td>Lois</td>
-              <td>Griffin</td>
-            </tr>
-            <tr>
-              <td>Joe</td>
-              <td>Swanson</td>
-            </tr>
-            <tr>
-              <td>Cleveland</td>
-              <td>Brown</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      
-      <div class="chat-here">
-        <textarea class="form-control" rows="3"></textarea>
-        <input type="submit" name="submit" value="Add Comment">
-      </div>
-    </div><!--End of main content-->
-    <div class="col-md-1"></div>
+  <div class="map-placeholder">
+    <img src="css/images/map.png" alt="map" width="400px">
   </div>
-    
+  
+  <div class="panel panel-default attendee-info">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h3>Attendees</h3>
+    </div>
+    <div class="panel-body">
+      <!-- Table -->
+      <table class="table">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="chat-here">
+    <textarea class="form-control" rows="3"></textarea>
+    <input type="submit" name="submit" value="Add Comment">
+  </div>
+</div><!--End of main content-->
+<div class="col-md-1"></div>
+</div>
+
   
   
 </div>
