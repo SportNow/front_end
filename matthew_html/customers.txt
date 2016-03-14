@@ -1,0 +1,21 @@
+There will be several types of customers who will probably be interested in our app.
+
+Of these individuals, most or all of the customers who use our app will likely own a device that can connect to the web (i.e. laptop, mobile phone, etc.) so that they can access SportNow.
+
+SportNow users will vary in terms of sports interests, web usage, and frequency in using SportNow. They will have differing goals, with some players looking for a competitive game and some looking for a casual game.
+
+1Ricky the jock, infrequent user
+2William the jock, frequent user
+3Edmond the casual, infrequent user
+4Lorraine the casual, frequent user
+
+Ricky loves playing all kinds of sports. Whether it be football, soccer, hockey, basketball and so on, Ricky does it all. One day while casually 
+browsing sports websites, he notices SportNow.
+
+William  - unlike Ricky, uses mobile frequently
+	 - 
+	 - 
+Edmond   - just browses the web for sports-related activities
+	 - looks for 
+Lorraine - needs an opponent to play Tennis with every Wednesday before picking up kids at 3PM
+	 - wants an easy-to-manuevre interface
