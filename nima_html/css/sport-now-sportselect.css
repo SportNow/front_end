@@ -12,7 +12,11 @@ body {
 
 html,body { height:100%; }
 
-.container { height:100%;}
+.container {
+    height:100%;
+    margin-left: 14em;
+    
+}
 
 #header-color {
     background-color: #990000;
@@ -70,14 +74,18 @@ tr:hover{background-color:#f5f5f5}
 }
 
 .sidebar {
-    padding-top: 4em;
     background-color: #222;
     opacity: 0.9;
     text-align: center;
     border-radius: 8px;
-    float: left;
-    margin-top: 16em;
+    padding-top: 4em;
     width: 14em;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
 }
 
 .sidebar img {
@@ -115,6 +123,7 @@ ul.vert-one li a{
     background:#600;
     padding: 10px 2px 10px 2px;
     width: 100%;
+    transition: 0.3s;
 }
 
 ul.vert-one li a:hover{
@@ -126,6 +135,79 @@ ul.vert-one li a.current,ul.vert-one li a.current:hover{
     background:#933 url("images/vert-one_arrow.gif") no-repeat 0 20px;
 }
 /*end of sidebar sub-class*/
+
+/*Search menu*/
+.search-menu {
+    background-color: #333;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding-top: 4em;
+    width: 0;
+    height: 80%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 10em;
+    margin-left: 14em;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.search-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-menu input[type="text"] {
+  display: block;
+  margin-top: 1em;
+  width: 100%;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 18px;
+  box-shadow: none;
+  border-radius: none;
+}
+    
+
+ul.search-list {
+    margin-top: 14em;
+    padding:0;
+    list-style-type:none;
+    display:block;
+    font:bold 14px Helvetica, Verdana, Arial, sans-serif;
+    line-height: 2em;
+}
+
+ul.search-list li {
+    margin-top: 1em;
+    margin-left: 3em;
+    padding:0;
+}
+
+ul.search-list li a{
+    display: block;
+    text-decoration:none;
+    color:#fff;
+    background:#600;
+    padding: 10px 2px 10px 2px;
+    width: 80%;
+    transition: 0.3s;
+}
+
+ul.search-list li a:hover{
+    background:#900;
+    
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px !important;
+}
+
+/*end of Search menu*/
 
 
 .center-content {
@@ -153,20 +235,33 @@ ul.vert-one li a.current,ul.vert-one li a.current:hover{
     margin-top: 10em;
 }
 
+
+.user-profile li {
+    width: 45%;
+    height: auto;
+}
+
+
+#user-edit-button {
+    float:right;
+    left: -2em;
+}
+
 .center-content .user-rating,
                 .user-placeholder,
                 .user-info,
                 .user-sport-info {
-                    
-    width: 44%;
-    float:left;
+
     margin-top: 2em;
     margin-left: 1em;
     margin-right: 2em;
-    
+}
+
+.center-content .user-rating {
+    height:20em;
 }
 
 
-.user-placeholder .user-profile {
-    width: 80%
+.user-placeholder .user-image {
+    width: 80%;
 }

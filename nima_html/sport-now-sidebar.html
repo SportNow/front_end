@@ -21,6 +21,19 @@
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openSearch() {
+        document.getElementById("mySearch").style.width = "14em";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeSearch() {
+        document.getElementById("mySearch").style.width = "0";
+    }
+          
+  </script>
+  
 </head>
 <body>
   
@@ -34,15 +47,23 @@
       <li><a href="#" title="CSS Menus">Settings</a></li>
       <li><a href="#" title="CSS Menus">Logout</a></li>
     </ul>  
-    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
+    <span onclick="openSearch()"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button></span>
   </div><!--End of sidebar-->
+  
+  <div id="mySearch" class="search-menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+      <input type="text" id="search" placeholder=" looking for ...">
+      <ul class="search-list">
+          <li><a href="#">User Search</a></li>
+          <li><a href="#">Location Search</a></li>
+          <li><a href="#">General Search</a></li>
+      </ul>
+  </div><!--End of Search menu-->
   
 <div class="container">
   <div  id="header-color" class="jumbotron">
     <h1>SportNow</h1>
 </div>
-
-<div class="sub-container">
   
 <div class="col-md-1"></div>
 <div class="center-content col-md-10">
@@ -101,7 +122,6 @@
   </div>
 </div><!--End of main content-->
 <div class="col-md-1"></div>
-</div>
 
 </div>
 
