@@ -220,21 +220,23 @@ ul.search-list li a:hover{
     border-radius: 8px;
 }
 
-.center-content .event-info,
-                .map-placeholder,
-                .attendee-info,
-                .chat-here {
-                    
-    width: 45%;
-    float:left;
+
+/*View Event*/
+ul.event-list {
     margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-    
+    list-style-type:none;
+    font:bold 14px Helvetica, Verdana, Arial, sans-serif;
 }
 
-.center-content .chat-here{
-    margin-top: 10em;
+ul.event-list li {
+    width: 45%;
+    height: auto;
+}
+/*End of View Event*/
+
+.location-placeholder {
+    margin-top: 2em;
+    margin-bottom: 2em
 }
 
 
