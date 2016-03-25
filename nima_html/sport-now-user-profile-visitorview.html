@@ -21,6 +21,19 @@
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
+    <script>
+    /* Set the width of the side navigation to 250px */
+    function openSearch() {
+        document.getElementById("mySearch").style.width = "14em";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeSearch() {
+        document.getElementById("mySearch").style.width = "0";
+    }
+          
+  </script>
+  
 </head>
 <body>
   
@@ -34,8 +47,18 @@
       <li><a href="#" title="CSS Menus">Settings</a></li>
       <li><a href="#" title="CSS Menus">Logout</a></li>
     </ul>  
-    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
+    <span onclick="openSearch()"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button></span>
   </div><!--End of sidebar-->
+  
+  <div id="mySearch" class="search-menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+      <input type="text" id="search" placeholder=" looking for ...">
+      <ul class="search-list">
+          <li><a href="#">User Search</a></li>
+          <li><a href="#">Location Search</a></li>
+          <li><a href="#">General Search</a></li>
+      </ul>
+  </div><!--End of Search menu-->
   
 <div class="container">
   <div  id="header-color" class="jumbotron">
@@ -50,24 +73,25 @@
   
   
   <div class="user-profile">
-    <a href="#" id="user-edit-button" class="btn btn-primary">Edit</a>
-    
     
     <ul class="list-inline">
       <li>
         <div class="user-rating">
           <h3>User Ratings</h3>
+          <button role="button" class="btn btn-warning"><span class="glyphicon glyphicon-star"></span> Give Rating</button>
           <img src="css/images/stars.png" alt="stars">
         </div>
       </li>
       <li>
         <div class="user-placeholder">
           <img src="css/images/user.jpg" alt="User" class="img-responsive img-thumbnail user-image">
-          <a href="#" class="btn btn-primary">Update Profile Picture</a>
+          <button role="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Add Friend</button>
+          <button role="button" class="btn btn-danger"><span class="glyphicon glyphicon-ban-circle"></span> Block</button>        
         </div>
       </li>
       <li>
         <div class="panel panel-default user-info">
+          
           <!-- Default panel contents -->
           <div class="panel-heading">
             <h4>User Description:</h4>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SportNow Search Results</title>
+  <title>SportNow User Profile</title>
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
-  <script>
+    <script>
     /* Set the width of the side navigation to 250px */
     function openSearch() {
         document.getElementById("mySearch").style.width = "14em";
@@ -64,18 +64,67 @@
   <div  id="header-color" class="jumbotron">
     <h1>SportNow</h1>
 </div>
+
+<div class="sub-container">
   
 <div class="col-md-1"></div>
 <div class="center-content col-md-10">
+  <h1>Bobby</h1>
   
-  <h1>Events Near You</h1>
-
-  <div class="location-placeholder">
-    <img src="css/images/map.png" alt="map">
-  </div><!--End of map-->
-
+  
+  <div class="user-profile">
+    
+    <ul class="list-inline">
+      <li>
+        <div class="user-rating">
+          <h3>User Ratings</h3>
+          <img src="css/images/stars.png" alt="stars">
+        </div>
+      </li>
+      <li>
+        <div class="user-placeholder">
+          <img src="css/images/user.jpg" alt="User" class="img-responsive img-thumbnail user-image">
+          <a href="#" class="btn btn-primary">Update Profile Picture</a>
+        </div>
+      </li>
+      <li>
+        <div class="panel panel-default user-info">
+          <button role="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+          
+          <!-- Default panel contents -->
+          <div class="panel-heading">
+            <h4>User Description:</h4>
+          </div>
+          <div class="panel-body">
+            <h4>Age: 4</h4>
+            <h4>Gender: Male</h4>  
+            <h4>Location: Canada-Vancouver</h4>  
+            <p>We can write about the event in here. Whatever we want to write about. 
+            Hi! My name is Bobby and I like making friends and having fun. Do you like having fun?</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="panel panel-default user-sport-info">
+          <!-- Default panel contents -->
+          <div class="panel-heading">
+            <h4>Sport Interests:</h4>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Basketball</li>
+              <li>Hockey</li>
+              <li>Soccer</li>
+            </ul>
+          </div>
+        </div>
+      </li>    
+    </ul>
+    
+  </div>
 </div><!--End of main content-->
 <div class="col-md-1"></div>
+</div>
 
 </div>
 

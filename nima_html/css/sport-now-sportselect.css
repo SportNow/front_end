@@ -246,28 +246,28 @@ ul.event-list li {
 }
 
 
+
+
 #user-edit-button {
     float:right;
     left: -2em;
 }
 
-.center-content .user-rating,
-                .user-placeholder,
-                .user-info,
-                .user-sport-info {
-
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-}
 
 .center-content .user-rating {
     height:20em;
 }
 
+.user-rating button {
+    margin-left: 1em;
+}
 
 .user-placeholder .user-image {
     width: 80%;
+}
+
+.center-content .user-info button{
+    float: right;
 }
 
 /*Search Results*/
