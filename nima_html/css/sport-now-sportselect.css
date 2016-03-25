@@ -14,7 +14,7 @@ html,body { height:100%; }
 
 .container {
     height:100%;
-    margin-left: 14em;
+    /*margin-left: 14em;*/
     
 }
 
@@ -86,6 +86,7 @@ tr:hover{background-color:#f5f5f5}
     top: 0;
     left: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .sidebar img {
@@ -151,6 +152,7 @@ ul.vert-one li a.current,ul.vert-one li a.current:hover{
     top: 0;
     left: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     text-align: center;
 }
 
@@ -265,3 +267,17 @@ ul.search-list li a:hover{
 .user-placeholder .user-image {
     width: 80%;
 }
+
+/*Search Results*/
+ul.search-results-list {
+    margin-top: 2em;
+    list-style-type:none;
+    font:bold 14px Helvetica, Verdana, Arial, sans-serif;
+}
+
+ul.search-results-list li {
+    width: 33%;
+    height: auto;
+}
+
+/*End of Search Results*/
