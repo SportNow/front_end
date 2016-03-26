@@ -12,7 +12,15 @@
   <script src="js/jquery-1.12.0.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/jquery.barrating.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+  	  <script type="text/javascript">
+	   $(function() {
+		  $('#example').barrating({
+			theme: 'fontawesome-stars'
+		  });
+	   });
+	  </script>
   
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css"/>
@@ -20,6 +28,9 @@
   
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-stars.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-stars.css">
+  <link rel="stylesheet" type="text/css" href="css/css-stars.css">
   
     <script>
     /* Set the width of the side navigation to 250px */
@@ -69,7 +80,7 @@
   
 <div class="col-md-1"></div>
 <div class="center-content col-md-10">
-  <h1>Bobby</h1>
+  <h1>Carl</h1>
   
   
   <div class="user-profile">
@@ -78,8 +89,17 @@
       <li>
         <div class="user-rating">
           <h3>User Ratings</h3>
-          <button role="button" class="btn btn-warning"><span class="glyphicon glyphicon-star"></span> Give Rating</button>
-          <img src="css/images/stars.png" alt="stars">
+		  <div class="br-wrapper br-theme-fontawesome-stars">
+			<select id="example"> <!-- now hidden -->
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		  <p>This is an overall evaluation of whether the user showed up on time, is roughly the skill level he/she claimed to be, and had good sportsmanship.</p>
+		  </div>
+          <!-- <img src="css/images/stars.png" alt="stars"> -->
         </div>
       </li>
       <li>
@@ -101,7 +121,7 @@
             <h4>Gender: Male</h4>  
             <h4>Location: Canada-Vancouver</h4>  
             <p>We can write about the event in here. Whatever we want to write about. 
-            Hi! My name is Bobby and I like making friends and having fun. Do you like having fun?</p>
+            Hi! My name is Carl and I like making friends and having fun. Do you like having fun?</p>
           </div>
         </div>
       </li>
