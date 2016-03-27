@@ -21,6 +21,19 @@
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
+    <script>
+    /* Set the width of the side navigation to 250px */
+    function openSearch() {
+        document.getElementById("mySearch").style.width = "14em";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeSearch() {
+        document.getElementById("mySearch").style.width = "0";
+    }
+          
+  </script>
+  
 </head>
 <body>
   
@@ -28,14 +41,24 @@
   <ul class="vert-one">
     <img src="css/images/user.jpg" alt="User" class="img-responsive img-circle">
     <h3 style="color:white; text-align:center;">Bobby</h3>
-    <li><a href="#" title="CSS Menus">User Profile</a></li>
-    <li><a href="#" title="CSS Menus" class="current">SportsFeed</a></li>
-    <li><a href="#" title="CSS Menus">About</a></li>
-    <li><a href="#" title="CSS Menus">Settings</a></li>
-    <li><a href="#" title="CSS Menus">Logout</a></li>
+    <li><a href="#" title="User Profile" class="current">User Profile</a></li>
+    <li><a href="#" title="SportsFeed">SportsFeed</a></li>
+    <li><a href="#" title="About">About</a></li>
+    <li><a href="#" title="Settings">Settings</a></li>
+    <li><a href="#" title="Logout">Logout</a></li>
   </ul>  
-  <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
+  <span onclick="openSearch()"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button></span>
 </div><!--End of sidebar-->
+
+<div id="mySearch" class="search-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+    <input type="text" id="search" placeholder=" looking for ...">
+    <ul class="search-list">
+        <li><a href="#">User Search</a></li>
+        <li><a href="#">Location Search</a></li>
+        <li><a href="#">General Search</a></li>
+    </ul>
+</div><!--End of Search menu-->
   
 <div class="container">
   <div  id="header-color" class="jumbotron">
@@ -43,19 +66,45 @@
 </div>
 
 <div class="col-md-1"></div>
-<div class="center-content col-md-10">
-  
-  <h1>Event @ 12:00</h1>
-  
+<div id="sport-event" class="center-content col-md-10">
+  <!--
+  id
+  headline
+  description
+  lat 
+  lng
+  address
+  datetime
+  is_competitive
+  max_seats
+  skill_min
+  skill_max
+  image_id
+  sport_id
+  user_id
+  created_at
+  update_at
+  -->
+  <img id="event-img" src="css/images/stadium.jpg">
+  <h1 id="event-headline">Headline</h1>
+  <p class="is_competitive">Competitive</p>
+  <a href="#" class="btn btn-default edit-button"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+  <p id="created_at">Event Created on Mar. 27 2016</p>
+  <p id="update_at">Last Updated on Mar. 27 2016</p>
   <ul class="event-list list-inline">
       <li>
-        <div class="panel panel-default event-info">
+        <div class="panel panel-default">
           <!-- Default panel contents -->
           <div class="panel-heading">
-            <h2>About the Event</h2>
+            <h3>Event Description</h3>
           </div>
           <div class="panel-body">
-            <p>We can write about the event in here. Whatever we want to write about </p>
+            Location: <p id="event-address">SFU Burnaby Campus</p>
+            Time: <p id="event-time">April 1 9pm</p>
+            Max. number of seats:<p id="max_seats">9001</p>
+            Skill Range<br>
+            <input id="ex2" data-slider-id="ex2Slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="[0,10]"/>
+            <p id="event-description">We can write about the event in here. Whatever we want to write about </p>
           </div>
         </div>
       </li><!--End of About-->
@@ -65,9 +114,10 @@
         </div>
       </li><!--End of Map-->   
       <li>
-        <div class="panel panel-default attendee-info">
+        <div id="attendee-info" class="panel panel-default">
           <!-- Default panel contents -->
           <div class="panel-heading">
+            <button id="invite-btn" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Invite</button>
             <h3>Attendees</h3>
           </div>
           <div class="panel-body">

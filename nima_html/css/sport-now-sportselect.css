@@ -232,6 +232,25 @@ ul.event-list li {
     width: 45%;
     height: auto;
 }
+
+#event-img {
+    height: 400px;
+    width: 100%;
+}
+
+.edit-button {
+    float:right;
+    background-color:#d9d9d9;
+}
+
+#invite-btn {
+    float: right;
+}
+
+#ex2Slider .slider-selection {
+	background: #BABABA;
+}
+
 /*End of View Event*/
 
 .location-placeholder {
@@ -244,8 +263,6 @@ ul.event-list li {
     width: 45%;
     height: auto;
 }
-
-
 
 
 #user-edit-button {
