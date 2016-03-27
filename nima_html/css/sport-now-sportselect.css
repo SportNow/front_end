@@ -255,12 +255,9 @@ ul.event-list li {
 
 
 .center-content .user-rating {
-    height:20em;
+    margin-bottom: 2em;
 }
 
-.user-rating button {
-    margin-left: 1em;
-}
 
 .user-placeholder .user-image {
     width: 80%;
