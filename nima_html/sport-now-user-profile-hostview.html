@@ -14,12 +14,24 @@
   <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
   
+  
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
+  
+  <!--Stars-->
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-stars.css">
+  <script src="js/jquery.barrating.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#example').barrating({
+        theme: 'fontawesome-stars'
+      });
+    });
+  </script>
   
     <script>
     /* Set the width of the side navigation to 250px */
@@ -64,8 +76,6 @@
   <div  id="header-color" class="jumbotron">
     <h1>SportNow</h1>
 </div>
-
-<div class="sub-container">
   
 <div class="col-md-1"></div>
 <div class="center-content col-md-10">
@@ -76,10 +86,16 @@
     
     <ul class="list-inline">
       <li>
-        <div class="user-rating">
-          <h3>User Ratings</h3>
-          <img src="css/images/stars.png" alt="stars">
-        </div>
+        <h3>User Ratings</h3>
+    		  <div class="br-wrapper br-theme-fontawesome-stars">
+      			<select id="example"> <!-- now hidden -->
+      				<option value="1">1</option>
+      				<option value="2">2</option>
+      				<option value="3">3</option>
+      				<option value="4">4</option>
+      				<option value="5">5</option>
+      			</select>
+    		  </div>
       </li>
       <li>
         <div class="user-placeholder">
@@ -124,7 +140,6 @@
   </div>
 </div><!--End of main content-->
 <div class="col-md-1"></div>
-</div>
 
 </div>
 
