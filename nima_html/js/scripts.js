@@ -45,7 +45,90 @@ $( document ).ready( function() {
     }
   });
   
-
-
+  
+    function divClicked1() {
+        var divHtml = $('#edit-me-1').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-1').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred1);
+    }
+    
+    function editableTextBlurred1() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-1>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked1);
+    }
+    
+    
+    function divClicked2() {
+        var divHtml = $('#edit-me-2').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-2').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred2);
+    }
+    
+    function editableTextBlurred2() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-2>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked2);
+    }
+    
+    
+    function divClicked3() {
+        var divHtml = $('#edit-me-3').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-3').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred3);
+    }
+    
+    function editableTextBlurred3() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-3>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked3);
+    }
+    
+    
+    function divClicked4() {
+        var divHtml = $('#edit-me-4').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-4').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred4);
+    }
+    
+    function editableTextBlurred4() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-4>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked4);
+    }
+  
+    $(".edit-btn1").click(divClicked1);
+    $(".edit-btn2").click(divClicked2);
+    $(".edit-btn3").click(divClicked3);
+    $(".edit-btn4").click(divClicked4);
   
 });
+

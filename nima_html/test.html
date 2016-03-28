@@ -73,55 +73,121 @@
   
 
 <div class="panel panel-default user-info">
-  <button role="button" class="btn btn-danger edit-btn"><span class="glyphicon glyphicon-plus"></span> Edit</button>
   
   <!-- Default panel contents -->
   <div class="panel-heading">
     <h4>User Description:</h4>
   </div>
   <div class="panel-body">
-    <h4 id="edit-me">Age: 4</h4>
-    <h4>Gender: Male</h4>
+    <h4>Age: </h4><div id="edit-me-1">4</div>
+    <button role="button" class="btn btn-danger edit-btn1"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
     
-    <h4>Location: Canada-Vancouver</h4>  
-    <p>We can write about the event in here. Whatever we want to write about. 
-    Hi! My name is Bobby and I like making friends and having fun. Do you like having fun?</p>
+    <h4>Gender: </h4><div id="edit-me-2">Male</div> 
+    <button role="button" class="btn btn-danger edit-btn2"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    
+    <h4>Location: </h4><div id="edit-me-3">Canada-Vancouver</div>
+    <button role="button" class="btn btn-danger edit-btn3"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    
+    <div id="edit-me-4">We can write about the event in here. Whatever we want to write about. 
+    Hi! My name is Bobby and I like making friends and having fun. Do you like having fun?</div>
+    <button role="button" class="btn btn-danger edit-btn4"><span class="glyphicon glyphicon-pencil"></span> Edit</button>  
   </div>
-</div>
 
+
+</div>
 
 <script>
     
-    function divClicked() {
-        var divHtml = $('#edit-me').html();
+    function divClicked1() {
+        var divHtml = $('#edit-me-1').html();
         var editableText = $("<textarea />");
         editableText.val(divHtml);
-        $('#edit-me').replaceWith(editableText);
+        $('#edit-me-1').replaceWith(editableText);
         editableText.focus();
         // setup the blur event for this new textarea
-        editableText.blur(editableTextBlurred);
+        editableText.blur(editableTextBlurred1);
     }
     
-    function editableTextBlurred() {
+    function editableTextBlurred1() {
         var html = $(this).val();
-        var viewableText = $("<div>");
+        var viewableText = $("<div id=edit-me-1>");
         viewableText.html(html);
         $(this).replaceWith(viewableText);
         // setup the click event for this new div
-        viewableText.click(divClicked);
+        viewableText.click(divClicked1);
+    }
+    
+    
+    function divClicked2() {
+        var divHtml = $('#edit-me-2').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-2').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred2);
+    }
+    
+    function editableTextBlurred2() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-2>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked2);
+    }
+    
+    
+    function divClicked3() {
+        var divHtml = $('#edit-me-3').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-3').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred3);
+    }
+    
+    function editableTextBlurred3() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-3>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked3);
+    }
+    
+    
+    function divClicked4() {
+        var divHtml = $('#edit-me-4').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me-4').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred4);
+    }
+    
+    function editableTextBlurred4() {
+        var html = $(this).val();
+        var viewableText = $("<div id=edit-me-4>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked4);
     }
     
     $(document).ready(function() {
-        $(".edit-btn").click(divClicked);
+        $(".edit-btn1").click(divClicked1);
+        $(".edit-btn2").click(divClicked2);
+        $(".edit-btn3").click(divClicked3);
+        $(".edit-btn4").click(divClicked4);
     });
 
 </script>
 
 
 
-
-</body>
-</html>
 
 </body>
 </html>

@@ -301,6 +301,10 @@ ul.event-list li {
     float: right;
 }
 
+.user-info textarea {
+    width: 100%;
+}
+
 .fileUpload {
     position: relative;
     overflow: hidden;
