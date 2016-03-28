@@ -1,0 +1,48 @@
+body {
+    background: url(background-image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #EEEEEE;
+}
+
+h1 {
+    color: white;
+}
+
+.icon {
+    border-radius: 2px 2px 2px 2px;
+    width: auto !important;
+    height: auto !important;
+    opacity: 0.65;
+    cursor: pointer;
+   -webkit-transition-duration: 0.4s;
+   -moz-transition-duration: 0.4s;
+   -o-transition-duration: 0.4s;
+   transition-duration: 0.4s;
+}
+
+.icon:hover{
+    border: 2px solid #AAA;
+    opacity: 1;
+}
+
+.thumb {
+   margin: 10px;
+   width: 300px;
+   height: 200px;	 
+}
+
+.test {
+   margin: auto;
+}
+
+.thumbnail {
+   margin: 0 auto !important;
+
+}
+
+.row {
+   margin: 0 auto !important;
+}
