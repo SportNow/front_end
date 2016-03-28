@@ -153,6 +153,11 @@ ul.vert-one li a.current,ul.vert-one li a.current:hover{
     color: #fff;
 }
 
+
+.search-menu a {
+    text-decoration: none;
+}
+
 .search-menu ul {
     margin-top: 4em;
     text-decoration: none;
