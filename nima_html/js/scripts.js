@@ -31,4 +31,21 @@ $( document ).ready( function() {
   
   $("#ex2").slider({});
   
+  $("#search-slider").slider({});
+  
+  $("#search-slider-enabled").click(function() {
+  	if(this.checked) {
+  		// With JQuery
+  		$("#search-slider").slider("enable");
+  	}
+  	else {
+  		// With JQuery
+  		$("#search-slider").slider("disable");
+  
+    }
+  });
+  
+
+
+  
 });

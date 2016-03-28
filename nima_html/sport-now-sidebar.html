@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SportNow User Profile</title>
+  <title>SportNow Sidebar</title>
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -17,14 +17,32 @@
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <script type="text/javascript" src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker-standalone.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
   
   <!--sport-now-->
   <link rel="stylesheet" type="text/css" href="css/sport-now-sportselect.css">
   
+    <!--Stars-->
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-stars.css">
+  <script src="js/jquery.barrating.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#example').barrating({
+        theme: 'fontawesome-stars'
+      });
+    });
+  </script>
+  
+  
   <script>
     /* Set the width of the side navigation to 250px */
     function openSearch() {
-        document.getElementById("mySearch").style.width = "14em";
+        document.getElementById("mySearch").style.width = "20em";
     }
     
     /* Set the width of the side navigation to 0 */
@@ -34,6 +52,21 @@
           
   </script>
   
+  <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>    
+  
 </head>
 <body>
   
@@ -41,22 +74,65 @@
     <ul class="vert-one">
       <img src="css/images/user.jpg" alt="User" class="img-responsive img-circle">
       <h3 style="color:white; text-align:center;">Bobby</h3>
-      <li><a href="#" title="CSS Menus" class="current">User Profile</a></li>
-      <li><a href="#" title="CSS Menus">SportsFeed</a></li>
-      <li><a href="#" title="CSS Menus">About</a></li>
-      <li><a href="#" title="CSS Menus">Settings</a></li>
-      <li><a href="#" title="CSS Menus">Logout</a></li>
+      <li><a href="#" title="User Profile" class="current">User Profile</a></li>
+      <li><a href="#" title="SportsFeed">SportsFeed</a></li>
+      <li><a href="#" title="About">About</a></li>
+      <li><a href="#" title="Settings">Settings</a></li>
+      <li><a href="#" title="Logout">Logout</a></li>
     </ul>  
     <span onclick="openSearch()"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button></span>
   </div><!--End of sidebar-->
   
   <div id="mySearch" class="search-menu">
       <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-      <input type="text" id="search" placeholder=" looking for ...">
+      <h2 class="white" >Filter by:</h2>
+      
+      <div class="form-group select optional event_sport">
+        <label class="select optional control-label white" for="event_sport">Sport</label>
+        <select class="select optional form-control" name="event[sport]" id="event_sport"><option value=""></option>
+          <option value="1">Soccer</option>
+          <option value="2">Tennis</option>
+          <option value="3">Basketball</option>
+          <option value="4">Golf</option>
+          <option value="5">Running</option>
+          <option value="6">Cycling</option>
+          <option value="7">Ice Hockey</option>
+          <option value="8">Baseball</option>
+          <option value="9">Football</option>
+        </select>
+      </div>
+      
+      <div class="search-calendar">
+          <div class="form-group">
+              <div class='input-group date' id='datetimepicker6'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+              </div>
+          </div>
+      
+          <div class="form-group">
+              <div class='input-group date' id='datetimepicker7'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <ul class="sport-competitive white">
+        <h5>Sport type</h5>
+        <label><input id="search-slider-enabled" type="checkbox" value=""> Competitive</label>
+        <label><input type="checkbox" value=""> Recreational</label>
+        
+        <h5>Skill Range</h5>
+        <input id="search-slider" data-slider-id="s-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="[0,10]" data-slider-enabled="false" />
+      </ul>
+      
       <ul class="search-list">
-          <li><a href="#">User Search</a></li>
-          <li><a href="#">Location Search</a></li>
-          <li><a href="#">General Search</a></li>
+          <li><a href="#">Find!</a></li>
       </ul>
   </div><!--End of Search menu-->
   
@@ -71,15 +147,19 @@
   
   
   <div class="user-profile">
-    <a href="#" id="user-edit-button" class="btn btn-primary">Edit</a>
-    
     
     <ul class="list-inline">
       <li>
-        <div class="user-rating">
-          <h3>User Ratings</h3>
-          <img src="css/images/stars.png" alt="stars">
-        </div>
+        <h3>User Ratings</h3>
+    		  <div class="br-wrapper br-theme-fontawesome-stars">
+      			<select id="example"> <!-- now hidden -->
+      				<option value="1">1</option>
+      				<option value="2">2</option>
+      				<option value="3">3</option>
+      				<option value="4">4</option>
+      				<option value="5">5</option>
+      			</select>
+    		  </div>
       </li>
       <li>
         <div class="user-placeholder">
@@ -89,6 +169,8 @@
       </li>
       <li>
         <div class="panel panel-default user-info">
+          <button role="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+          
           <!-- Default panel contents -->
           <div class="panel-heading">
             <h4>User Description:</h4>
