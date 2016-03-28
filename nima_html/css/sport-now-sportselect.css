@@ -219,18 +219,18 @@ ul.search-list li a:hover{
     border-radius: 8px;
 }
 
-.center-content th {
+#attendee-info th {
     text-align: center;
-    /*background-color: pink;*/
+    background-color: pink;
 }
 
-.center-content ul {
+#attendee-info ul {
     list-style-type: none;
 }
 
-.center-content tr:nth-child(even) {background-color: #f2f2f2}
+#attendee-info tr:nth-child(even) {background-color: #f2f2f2}
 
-.center-content tr:hover{background-color:#f5f5f5}
+#attendee-info tr:hover{background-color:#f5f5f5}
 
 
 /*View Event*/

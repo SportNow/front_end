@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SportNow Sidebar</title>
+  <title>SportNow Test</title>
   
   
   <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
@@ -13,13 +13,21 @@
   <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+
+ 
   
-  
-</head>
-<body>
-  
-  
-  <div class="container">
+  <style type="text/css">
+
+    
+    div {
+        margin: 20px 0;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+
+/*  <div class="container">
     <div class='col-md-5'>
         <div class="form-group">
             <div class='input-group date' id='datetimepicker6'>
@@ -55,6 +63,62 @@
         });
     });
 </script>
+*/
+    </style>
+  
+  
+</head>
+<body>
+  
+  
+
+<div class="panel panel-default user-info">
+  <button role="button" class="btn btn-danger edit-btn"><span class="glyphicon glyphicon-plus"></span> Edit</button>
+  
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+    <h4>User Description:</h4>
+  </div>
+  <div class="panel-body">
+    <h4 id="edit-me">Age: 4</h4>
+    <h4>Gender: Male</h4>
+    
+    <h4>Location: Canada-Vancouver</h4>  
+    <p>We can write about the event in here. Whatever we want to write about. 
+    Hi! My name is Bobby and I like making friends and having fun. Do you like having fun?</p>
+  </div>
+</div>
+
+
+<script>
+    
+    function divClicked() {
+        var divHtml = $('#edit-me').html();
+        var editableText = $("<textarea />");
+        editableText.val(divHtml);
+        $('#edit-me').replaceWith(editableText);
+        editableText.focus();
+        // setup the blur event for this new textarea
+        editableText.blur(editableTextBlurred);
+    }
+    
+    function editableTextBlurred() {
+        var html = $(this).val();
+        var viewableText = $("<div>");
+        viewableText.html(html);
+        $(this).replaceWith(viewableText);
+        // setup the click event for this new div
+        viewableText.click(divClicked);
+    }
+    
+    $(document).ready(function() {
+        $(".edit-btn").click(divClicked);
+    });
+
+</script>
+
+
+
 
 </body>
 </html>
