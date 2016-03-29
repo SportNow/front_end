@@ -1,0 +1,17 @@
+.team-members {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-member {
+  color: white;
+}
+
+.team-role {
+  color: white;
+}
+
+.team-description {
+  color: white;
+}
