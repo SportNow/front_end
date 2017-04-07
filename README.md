@@ -3,7 +3,7 @@ Abstract
 SportNow will match users by asking them to specify their preferences in what, where, and when
 they want to play and then use this information to create “events” for other people to join. During this
 matchmaking process, the skill level, location, level of sportsmanship, and preferred sport of players will
-be considered. Self­evaluations will be included to try and help match up players of even skill level for
+be considered. Self-evaluations will be included to try and help match up players of even skill level for
 the more competitive players. In short, SportNow is an online web app for easy sports matchmaking.
 
 Customers
@@ -21,8 +21,8 @@ He or she could be interested in SportNow to casually find opponents to play aga
 
 Competitive Analysis
 
-There currently exist other apps that help users find others interested in playing sports. In general
-these apps seem to be focused more on casual play than competitive play.
+There are currently exist other apps that help users find others interested in playing sports. In general
+these apps seem to be focused on casual players than competitive players.
 A Google search for “play sports with people near you” lists several services: Sporty, SportsVite,
 SportsBuddy, Let’s Play!, SportsJig, Find Sports Nearby Me, Timpik, Sportmeets, and PlayWith. These
 are marketed to “connect people through sport,” and as “Tinder for sports fans,” with a “focus on sports,
@@ -30,17 +30,17 @@ not dating.” Many of these apps allow customers to review each other, chat to 
 to play, find games based on their location, and create their own event.
 SportsVite’s website looks professional and easy to use. Sportsvite is popular with over 22,000
 likes on Facebook. SportsVite has many users in Vancouver, though few are active. A SportsVite profile
-includes an individual’s name, age, sports preferences, picture, city, and a short greeting message​.
+includes an individual’s name, age, sports preferences, picture, city, and a short greeting message.
 You can also search for teams, events, and leagues to join on SportsVite. Furthermore, a SportsVite user
-can specify their experience, skill level, interest, frequency, availability, and comments​for each sport.
+can specify their experience, skill level, interest, frequency, availability, and comments for each sport.
 Compared to SportsVite, SportNow’s user profiles will have very similar info. In addition, when you
 search for players on SportNow, you can also see how recently they were active on the site. On the other
 hand, SportNow will not recognize teams or leagues, but will attempt to focus more on individual skill
-rating​.
+rating.
 SportsBuddy is a phone app that can be used by users to find others interested in playing the same
 sports. However, unlike other apps in its category, SportsBuddy can be used not only for peer to peer use,
 but also by instructors as a networking service to connect them with students. In comparison, SportNow
-will focus more on setting up events for users to play sports ​than for teachers to find students and will
+will focus more on setting up events for users to play sports than for teachers to find students and will
 be a website rather than a phone app.
 SportsJig has 5/5 stars on the Android Store with 45 ratings, and is available for the iPad and
 iPhone. SportsJig allows individuals to create a public profile that permits users to become “Sports
@@ -51,11 +51,9 @@ memberships or classes, but will primarily concentrate on promoting events betwe
 SportsPartner is very popular, having matched over 100,000 people over 8 years, and can be used
 from a web browser without requiring a smartphone. SportsPartner allows someone to find a partner to
 play with. To do this, SportsPartner users must specify their sport, gender, and age range preference as
-well as write a short description of themselves. These users are also able to “hi­five” others or send
-messages. SportNow will support user descriptions​, but will not include a “hi­five” system. Because
-SportsPartner is not meant for group activities, only a limited range of sports options are provided. This is
-a drawback that SportNow will attempt to remedy by offering a wider range of possibilities (e.g. 10­player
-soccer or volleyball). Only people in the UK can join SportsPartner, whereas SportNow will have no
+well as write a short description of themselves. These users are also able to “hifive” others or send
+messages. SportNow will support user descriptions​, but will not include a “hifive” system. Because
+SportsPartner is not meant for group activities, only a limited range of sports options are provided. This is a drawback that SportNow will attempt to remedy by offering a wider range of possibilities (e.g. 10­player soccer or volleyball). Only people in the UK can join SportsPartner, whereas SportNow will have no
 region­based restrictions. Unlike SportNow, SportsPartner makes no use of Facebook or other single
 sign­on services. The SportsPartner service is simple because it is only for sports involving pairs.
 SportNow will support group activities​, requiring more complexity but with a greater potential for
@@ -66,9 +64,9 @@ Scope
 Unlike recreational centers and other apps, our app matches players up quickly and
 easily. Setting a time and place to meet up is readily taken care of by the app once users have
 filled in the appropriate information. Furthermore, our app helps users find others for
-non­competitive sports (such as biking, jogging, etc.) as well as competitive sports. Events in our
-app will not be limited to one­on­one matchups, but will also include team sports.
-To this end, users will have the ability to self­evaluate their skill level in each sport,
+non-competitive sports (such as biking, jogging, etc.) and competitive sports. Events in our
+app will not be limited to one-on-one matchups, but will also include team sports.
+Therefore, users will have the ability to self-evaluate their skill level in each sport,
 which will allow SportNow to display a list of available events that is relevant to the user. This
 skill level rating will also be used to allow users to create events of their own and find other
 players of a similar skill level in competitive events. On the other hand, recreational events will
