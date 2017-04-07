@@ -1,10 +1,13 @@
-Abstract
+Abstract 
+
 SportNow will match users by asking them to specify their preferences in what, where, and when
 they want to play and then use this information to create “events” for other people to join. During this
 matchmaking process, the skill level, location, level of sportsmanship, and preferred sport of players will
 be considered. Self­evaluations will be included to try and help match up players of even skill level for
 the more competitive players. In short, SportNow is an online web app for easy sports matchmaking.
+
 Customers
+
 There will be several types of customers for SportNow. All can connect to the web, with a laptop
 or mobile phone, to access SportNow. These users will vary in their sports background, web proficiency,
 and frequency in using SportNow. However, these all enjoy playing sports with convenience.
@@ -15,7 +18,9 @@ web frequently and likes playing sports, he or she could become a recurring user
 Another type of customer might be less enthusiastic about playing sports, and only surf the web
 from time to time. However, this customer might be interested in learning how to play a particular sport.
 He or she could be interested in SportNow to casually find opponents to play against in just one sport.
+
 Competitive Analysis
+
 There currently exist other apps that help users find others interested in playing sports. In general
 these apps seem to be focused more on casual play than competitive play.
 A Google search for “play sports with people near you” lists several services: Sporty, SportsVite,
@@ -55,7 +60,9 @@ region­based restrictions. Unlike SportNow, SportsPartner makes no use of Faceb
 sign­on services. The SportsPartner service is simple because it is only for sports involving pairs.
 SportNow will support group activities​, requiring more complexity but with a greater potential for
 integrating more sports.
+
 Scope
+
 Unlike recreational centers and other apps, our app matches players up quickly and
 easily. Setting a time and place to meet up is readily taken care of by the app once users have
 filled in the appropriate information. Furthermore, our app helps users find others for
@@ -77,6 +84,7 @@ search. User preferences can be about preferred sports and skill level, while th
 help users find casual or competitive events and the skill range they are interested in playing
 with. Users of the app can also leave anonymous “sportsmanship ratings” for users they meet in
 order to inform others about whether or not these individuals are courteous, punctual, etc.
+
 Sample Scenarios
 1. Jimmy logs into his account. Once logged in, Jimmy selects “Golf ­ Recreational”, and a
 feed appears listing all upcoming recreational events for soccer. Jimmy browses through
@@ -105,35 +113,48 @@ Ferdinand all check their event feed between April 3 and April 6. They each find
 event and join it. They introduce themselves by posting comments on the event page. On
 April 7, all six people meet and play basketball, getting along quite well. The next day,
 they review each other by going on each others’ profiles and giving each other 5 stars.
+
 APIs Used
 Amazon S3 API
 This API was used for hosting the application images found for sports, events, and users.
 Google Maps API
 This API was used for displaying the location of events as well as looking up cities that users
 reside in.
+
 User Stories
+
 Summary of our Web Application
+
 Signing Up
+
 A general user visits the SportNow and lands on the login page.
 If the user wishes to sign up for a new SportNow account, the user may click register.
 After the user fills and submits the registration form, the SportSelect page will appear.
 On the SportSelect page, the user will choose sport preferences.
 Once the user creates an account the user will be automatically logged into SportNow.
+
 Logging In and Logging Out
+
 The user can log into SportNow via Facebook or SportNow.
 At any time, the user may click on the sidebar to log out.
 When the user logs into SportNow, the home page will be the the SportFeed page.
 On the SportFeed page, the user may browse upcoming events, or create their own.
+
 Sidebar
+
 At any time, the user may click on one of the links on the sidebar to view: their own user profile
 page; events they are planning to attend; the SportFeed page; their sport preferences; or the search
 feature.
+
 User Profile
+
 On the User Profile page, the user may view someone’s User Rating, Display Picture, User
 Description, or Sport Preferences.
 If the user is on their own personal profile page, a new profile picture could be uploaded using the
 Amazon S3 API or changes could be made to the User Description.
+
 My Events
+
 On the My Events page, the user can view all of the events that they have either signed up for or
 have created.
 From this page, the user can access the event pages of the events they are associated with.
@@ -144,11 +165,13 @@ The user can create their own event. As an event’s host, the user can use the 
 choose the location of the event.
 Alternatively, if an event on the SportFeed is clicked, the user will be directed to view that event
 page, where he/she can become an attendee.
+
 Sport Preferences
 The user can select the sports they are interested in searching for as well as their self­evaluated
 skill level.
 Search
 At any time, the user may click on the search button on the sidebar to find specific events.
+
 Signing Up
 SportNow Visitor Wants to Sign Up
 Name/Description:​Shannon wants to sign up on SportNow to play tennis with others
@@ -210,7 +233,9 @@ Acceptance Criteria:
 Tests:
 ­ validate that a route to SportNow login exists;
 ­ validate that the user’s account is not active;
+
 User Profile
+
 Customer Wants to View Personal Profile
 Name/Description:​Michelle the hockey player wants to review the information on her profile
 Persona:​SportNow user
@@ -246,6 +271,7 @@ Name/Description:​Dennis does not like SportNow’s default profile picture an
 his profile picture to one that more accurately represents him
 Persona:​SportNow user
 Precondition/Triggers:
+
 ­ Logged into SportNow
 Actions/Postcondition:
 ­ On the sidebar, User Profile is clicked
@@ -273,6 +299,7 @@ Acceptance Criteria:
 Tests:
 ­ Validate that the route to the other user’s profile exists
 ­ Validate that the user ratings correctly display the appropriate value
+
 My Events
 Customer Wants to View the My Events Page
 Name/Description:​Cherice wants to see the events that she has already created or signed up for
@@ -312,6 +339,7 @@ Customer Wants to View the Attendees of an Event He/She Created
 Name/Description:​Lisa wants to know who will be attending the event she created
 Persona:​SportNow user, host of an existing sport event
 Precondition/Triggers:
+
 ­ Logged into SportNow
 ­ Lisa has already created an event
 ­ Lisa is on the My Events page
@@ -327,6 +355,7 @@ Tests:
 ­ Validate that the routes to the individual event pages exist
 ­ Validate that appropriate Attendees appear on the event page
 ­ Validate that the Attendees have signed up for that event
+
 SportFeed
 Customer Wants to View Index (SportFeed) Page
 Name/Description:​Max is a user who wants to view the feed of events taking place in the
@@ -357,6 +386,7 @@ Tests:
 ­ validate that the location of the event appears on Google Maps;
 ­ validate that the headline meets a certain character length;
 ­ validate that the routes to all the links on the sidebar exist;
+
 Customer Wants to View an Event
 Name/Description:​Bobby wants to attend an event on the SportFeed page
 Persona: ​SportNow user; attendee of an existing sport event
@@ -398,7 +428,9 @@ Tests:
 ­ Joining a joinable event should make the user join the event
 ­ Joining a joinable event should redirect to /events/<event_id>
 ­ Joining a joinable event should display an alert
+
 Sport Preferences
+
 Customer Just Finished Setting Up His/Her Account (SportSelect)
 Name/Description:​Grace is a user who has just finished signing up for SportNow and has been
 redirected to SportSelect
@@ -414,6 +446,7 @@ Tests:
 ­ validate that the routes to all the links on the sidebar exist
 ­ validate that all icons can be selected or deselected
 ­ validate that when an icon is selected, a skill slider will appear
+
 Customer Wants to Update His/Her Sport Preferences
 Name/Description:​Jordan has recently lost interest in Basketball but has gained a new interest
 in Hockey; as a result, he wants to update his sport preferences
@@ -432,6 +465,7 @@ Tests:
 ­ validate that when an icon is selected, a skill slider will appear
 ­ validate that the user has selected at least one sport
 Search
+
 Customer Wants to Make a Search
 Name/Description:​Nelly is a user who wants to filter the feed for a specific event
 Persona:​SportNow user
@@ -447,6 +481,7 @@ Acceptance Criteria:
 sport events pertaining to the user’s search filters
 Tests:
 ­ validate that the route to the SportFeed view exists
+
 Customer Wants to View a Competitive or Recreational Event
 Name/Description:​Joanne wants to filter her SportFeed by Competitive or Recreational events
 Persona:​SportNow user who wants to find an existing sport event to attend
@@ -465,5 +500,6 @@ Acceptance Criteria:
 Tests:
 ­ Validate that the route to the SportFeed page exists
 ­ Validate that the events shown on the SportFeed page match the filters selected
+
 User Interface Requirements
 The user may login via SportNow, Facebook, or Google
